@@ -2,28 +2,28 @@ import turtle
 import time
 from random import randint
 
-
+# moving to left
 def left():
     if snake[0].heading() == 90:
         snake[0].left(90)
     elif snake[0].heading() == 270:
         snake[0].right(90)
 
-
+# moving to right
 def right():
     if snake[0].heading() == 270:
         snake[0].left(90)
     elif snake[0].heading() == 90:
         snake[0].right(90)
 
-
+# moving to up
 def up():
     if snake[0].heading() == 0:
         snake[0].left(90)
     elif snake[0].heading() == 180:
         snake[0].right(90)
 
-
+# moving to down
 def down():
     if snake[0].heading() == 180:
         snake[0].left(90)
